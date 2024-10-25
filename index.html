@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sprite Generator</title>
+    <link rel="stylesheet" href="global.css">
+    <meta http-equiv="Content-Security-Policy"
+        content="script-src 'self' 'wasm-unsafe-eval' 'inline-speculation-rules' 'unsafe-inline';">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>CSS Sprite Generator</h1>
+
+
+        <div class="tool">
+            <h2>Upload Files</h2>
+            <input type="file" id="imageInput" multiple>
+            <button id="addImages">Add Images</button>
+        </div>
+
+        <div id="imageContainer"></div>
+
+        <div class="radio">
+            <label>
+                <input type="radio" name="layout" value="vertical" checked>
+                Vertical
+            </label>
+            <label>
+                <input type="radio" name="layout" value="horizontal">
+                Horizontal
+            </label>
+            <label>
+                <input type="radio" name="layout" value="grid">
+                Grid
+            </label>
+        </div>
+
+        <div class="tool">
+            <h2>Preview Sprites</h2>
+            <button id="previewSprite">Preview Sprite</button>
+        </div>
+
+        <canvas id="spriteCanvas"></canvas>
+
+        <div class="tool">
+            <h2>Download Sprites</h2>
+            <button id="downloadSprite">Download Sprite</button>
+        </div>
+
+        <div class="tool">
+            <h2 class="spirit">Sprite CSS</h2>
+            <textarea id="cssOutput" readonly></textarea>
+        </div>
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
